@@ -521,6 +521,7 @@ For help on building and testing Caja, see:
       <include name="**/tools/*.java"/>
       <compilerarg line="-Xlint:deprecation"/>
       <compilerarg line="-Xlint:unchecked"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <!-- Copy supporting javascript to lib -->
     <copy todir="${lib}">
