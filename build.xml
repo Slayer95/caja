@@ -369,6 +369,7 @@ For help on building and testing Caja, see:
       <src path="${tests}"/>
       <classpath refid="classpath.tests"/>
       <include name="**/TestFlagTypoCheck.java"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <taskdef name="testflagtypocheck"
      classname="com.google.caja.util.TestFlagTypoCheck"
@@ -562,6 +563,7 @@ For help on building and testing Caja, see:
       <include name="com/google/caja/util/Lists.java"/>
       <include name="com/google/caja/util/Maps.java"/>
       <include name="com/google/caja/util/Sets.java"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <copy todir="${lib}">
       <fileset dir="${src}">
@@ -580,6 +582,7 @@ For help on building and testing Caja, see:
       <classpath refid="classpath.main"/>
       <include name="**/caja/lang/css/CssPropertyPatterns.java"/>
       <include name="**/caja/lang/html/HtmlDefinitions.java"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <genrule class="com.google.caja.lang.css.CssPropertyPatterns$Builder">
       <output file="${lib.caja}/plugin/css-defs.js"/>
@@ -649,6 +652,7 @@ For help on building and testing Caja, see:
       <src path="${tests}"/>
       <classpath refid="classpath.tests"/>
       <include name="**/caja/demos/benchmarks/*.java"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <junit printsummary="yes" fork="yes" maxmemory="512m"
      errorProperty="benchmarks.error" failureProperty="benchmarks.failure">
@@ -926,6 +930,7 @@ For help on building and testing Caja, see:
       <include name="**/caja/**/*Test.java"/>
       <include name="**/caja/plugin/BrowserTestCaseStub.java"/>
       <compilerarg line="-Xlint:unchecked"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
 
     <transform>
@@ -1058,6 +1063,7 @@ For help on building and testing Caja, see:
       <exclude name="**/caja/plugin/*Main.java"/>
       <exclude name="**/caja/plugin/BuildServiceImplementation.java"/>
       <compilerarg line="-Xlint:unchecked"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <copy todir="${lib}">
       <fileset dir="${src}">
@@ -1094,6 +1100,7 @@ For help on building and testing Caja, see:
       <classpath refid="classpath.main"/>
       <include name="**/caja/service/*.java"/>
       <compilerarg line="-Xlint:unchecked"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
   </target>
 
@@ -1123,6 +1130,7 @@ For help on building and testing Caja, see:
       </classpath>
       <classpath refid="classpath.main"/>
       <classpath refid="classpath.gwt"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <java failonerror="true" fork="true"
      classname="com.google.gwt.dev.Compiler">
@@ -1341,6 +1349,7 @@ For help on building and testing Caja, see:
       <classpath refid="classpath.gwt"/>
       <include name="**/caja/demos/playground/server/*.java"/>
       <compilerarg line="-Xlint:unchecked"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <depend closure="yes" destdir="${lib}" srcdir="${src}" />
     <javac destdir="${lib}" debug="true" target="1.7" source="1.7">
@@ -1349,6 +1358,7 @@ For help on building and testing Caja, see:
       <classpath refid="classpath.gwt"/>
       <include name="**/caja/demos/playground/server/**/*.java"/>
       <compilerarg line="-Xlint:unchecked"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
   </target>
 
@@ -1438,6 +1448,7 @@ For help on building and testing Caja, see:
       <exclude name="nu/validator/htmlparser/sax/**/*.java"/>
       <exclude name="nu/validator/htmlparser/xom/**/*.java"/>
       <compilerarg line="-Xlint:none"/>
+      <compilerarg line="-encoding utf-8"/>
     </javac>
     <jar basedir="${third_party}/java/htmlparser/src/"
      destfile="${jars}/htmlparser-src.jar">
