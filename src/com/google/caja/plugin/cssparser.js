@@ -255,6 +255,7 @@ var parseCssDeclarations;
   function declaration(toks, i, n, handler) {
     var property = toks[i++];
     if (!ident.test(property)) {
+      if (property === ';') return i;
       return skipDeclaration(toks, i, n);
     }
     var tok;
