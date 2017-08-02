@@ -190,7 +190,7 @@ var parseCssDeclarations;
         ++i;
         break;
       }
-      if (tok === ' ') {
+      if (tok === ' ' || tok === ';') {
         i = i+1;
       } else {
         i = declaration(toks, i, n, handler);
@@ -309,7 +309,7 @@ var parseCssDeclarations;
   parseCssDeclarations = function(cssText, handler) {
     var toks = lexCss(cssText);
     for (var i = 0, n = toks.length; i < n;) {
-      i = toks[i] !== ' ' ? declaration(toks, i, n, handler) : i+1;
+      i = toks[i] !== ' ' && toks[i] !== ';' ? declaration(toks, i, n, handler) : i+1;
     }
   };
 })();
