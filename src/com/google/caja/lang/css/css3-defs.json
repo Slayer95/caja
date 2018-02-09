@@ -955,7 +955,7 @@
       "mediaGroups": ["visual"],
       "source": "https://drafts.csswg.org/css-shapes/#shape-outside-property" },
 
-    { "key": "<shape-box>", "signature": "margin-box | <box>" }
+    { "key": "<shape-box>", "signature": "margin-box | <box>" },
 
     { "key": "speak",
       "signature": "normal | none | spell-out",
@@ -1383,7 +1383,7 @@
           " words and turns them into a single quoted term.",
           "Subsequent words need not be unreserved since a 'font-family'",
           " cannot be followed directly by a reserved keyword."],
-      "signature": "<unreserved-word> <quotable-word>*" }
+      "signature": "<unreserved-word> <quotable-word>*" },
 
     { "key": "<margin-width>",
       "see": "http://www.w3.org/TR/CSS21/box.html#value-def-margin-width",

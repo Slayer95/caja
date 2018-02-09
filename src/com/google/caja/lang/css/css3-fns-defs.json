@@ -33,13 +33,13 @@
       "signature": "<red> <green> <blue>" },
 
     { "key": "rgba",
-      "signature": "<red> <green> <blue> <alphavalue>" }
+      "signature": "<red> <green> <blue> <alphavalue>" },
 
     { "key": "hsl",
       "signature": "<angle> <percentage> <percentage>" },
 
     { "key": "hsla",
-      "signature": "<angle> <percentage> <percentage> <alphavalue>" }
+      "signature": "<angle> <percentage> <percentage> <alphavalue>" },
 
     { "key": "url",
       "signature": "<uri>|<string>" }
