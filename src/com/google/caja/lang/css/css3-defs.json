@@ -251,12 +251,14 @@
       "as": "border-top-width" },
 
     { "key": "border-radius",
-      "signature": "[<length> | <percentage>]{1,4} [ / [<length> | <percentage>]{1,4} ]?",
+      "signature": "<border-radius>",
       "default": "0",
       "appliesTo": "*",
       "inherited": false,
       "mediaGroups": ["visual"],
       "source": "http://dev.w3.org/csswg/css3-background/#the-border-radius" },
+
+    { "key": "<border-radius>", "signature": "[<length> | <percentage>]{1,4} [ / [<length> | <percentage>]{1,4} ]?" },
 
     { "key": "border-right",
       "as": "border-top" },
@@ -929,6 +931,32 @@
       "inherited": false,
       "mediaGroups": ["visual"] },
 
+    { "key": "shape-image-threshold",
+      "signature": "<alphavalue>",
+      "default": "0",
+      "appliesTo": "*",
+      "inherited": false,
+      "mediaGroups": ["visual"],
+      "source": "https://drafts.csswg.org/css-shapes/#shape-image-threshold-property" },
+
+    { "key": "shape-margin",
+      "signature": "<length> | <percentage>",
+      "default": "0",
+      "appliesTo": "*",
+      "inherited": false,
+      "mediaGroups": ["visual"],
+      "source": "https://drafts.csswg.org/css-shapes/#shape-margin" },
+
+    { "key": "shape-outside",
+      "signature": "none | [ <basic-shape> || <shape-box> ] | <image>",
+      "default": "none",
+      "appliesTo": "*",
+      "inherited": false,
+      "mediaGroups": ["visual"],
+      "source": "https://drafts.csswg.org/css-shapes/#shape-outside-property" },
+
+    { "key": "<shape-box>", "signature": "margin-box | <box>" }
+
     { "key": "speak",
       "signature": "normal | none | spell-out",
       "default": "normal",
@@ -1209,9 +1237,6 @@
       "source": "http://msdn2.microsoft.com/en-us/library/ms531189(VS.85).aspx"
     },
 
-
-
-
     { "key": "<absolute-size>",
       "see": "http://www.w3.org/TR/CSS21/fonts.html#propdef-font-size",
       "signature": "xx-small|x-small|small|medium|large|x-large|xx-large" },
@@ -1219,6 +1244,11 @@
     { "key": "<attachment>",
       "signature": "scroll | fixed | local",
       "source": "http://dev.w3.org/csswg/css-backgrounds/#ltattachmentgt"
+    },
+
+    { "key": "<basic-shape>",
+      "signature": "<inset> | <circle> | <ellipse> | <polygon>",
+      "source": "https://drafts.csswg.org/css-shapes/#typedef-basic-shape"
     },
 
     { "key": "<bg-image>",
@@ -1254,6 +1284,11 @@
       "source": "http://dev.w3.org/csswg/css3-background/#background-clip"
     },
 
+    { "key": "<circle>",
+      "signature": "circle( [ <length> | <percentage> | closest-side | farthest-side ]? [ at <position> ]? )",
+      "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
+    },
+
     { "key": "<color-stop>",
       "signature": "<color> [ <percentage> | <length> ]?",
       "source": "http://dev.w3.org/csswg/css-images-3/#color-stop-syntax"
@@ -1270,6 +1305,11 @@
     { "key": "<counter>",
       "see": "http://www.w3.org/TR/CSS21/syndata.html#value-def-counter",
       "signature": "counter(<identifier>) | counter(<identifier>, <list-style-type>)" },
+
+    { "key": "<ellipse>",
+      "signature": "ellipse([ [ <length> | <percentage> | closest-side | farthest-side ]{2} ]? [ at <position> ]?)",
+      "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
+    },
 
     { "key": "<ending-shape>",
       "signature": "circle | ellipse",
@@ -1326,6 +1366,11 @@
       "source": "http://dev.w3.org/csswg/css-images-3/#image-values"
     },
 
+    { "key": "<inset>",
+      "signature": "inset([ <length> | <percentage> ]{1, 4} [ round <border-radius> ]?)",
+      "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
+    },
+
     { "key": "<linear-gradient>",
       "signature": "linear-gradient ( [ [ <angle> | to <side-or-corner> ] ,]? <color-stop> [ , <color-stop>]+ )",
       "source": "http://dev.w3.org/csswg/css-images-3/#linear-gradient-type"
@@ -1351,6 +1396,11 @@
     { "key": "<page-url>",
       "signature": "<uri>",
       "description": "A URI that is resolved relative to the base URL of the document containing the styled node, not the containing stylesheet."
+    },
+
+    { "key": "<polygon>",
+      "signature": "polygon(<fill-rule>? [ <length> | <percentage> ]{2} [ [ <length> | <percentage> ]{2} ]*)",
+      "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
     },
 
     { "key": "<position>",

@@ -14,8 +14,20 @@
     { "key": "attr",
       "signature": "<ident> ((string|value|url|integer|number|length|angle|time|frequency|em|ex|px|gd|rem|vw|vh|vm|mm|cm|in|pt|pc|deg|grad|rad|ms|s|Hz|kHz|percentage) <value>?)?" },
 
+    { "key": "inset",
+      "signature": "[ <length> | <percentage> ]{1, 4} [ round <border-radius> ]?" },
+
+    { "key": "circle",
+      "signature": "[ <length> | <percentage> | closest-side | farthest-side ]? [ at <position> ]?" },
+
+    { "key": "ellipse",
+      "signature": "[ [ <length> | <percentage> | closest-side | farthest-side ]{2} ]? [ at <position> ]?" },
+
     { "key": "rect",
       "signature": "<top> <right> <bottom> <left>" },
+
+    { "key": "polygon",
+      "signature": "<fill-rule>? [ <length> | <percentage> ]{2} [ [ <length> | <percentage> ]{2} ]*" },
 
     { "key": "rgb",
       "signature": "<red> <green> <blue>" },
