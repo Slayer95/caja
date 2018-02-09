@@ -1407,7 +1407,7 @@
       "default": "center",
       "signature": "[ <percentage>  |  <length>  |  [[ left | right ] [ <percentage> | <length> ]? [ center | [ top | bottom ] [ <percentage> | <length> ]? ]? ]  |  [ [ top | bottom ] [ <percentage> | <length> ]? [ center | [ left | right ] [ <percentage> | <length> ]? ]? ]  |  [ center [ center | [ left | right | top | bottom ] [ <percentage> | <length> ]? ]? ] ]",
       "comment": "the signature was derived from the source by duplicating and reducing to avoid the use of the && operator defined in http://www.w3.org/TR/CSS21/about.html#property-defs which is not supported by the CSS whitelist parser.",
-      "source": "http://dev.w3.org/csswg/css-backgrounds/#position",
+      "source": "http://dev.w3.org/csswg/css-backgrounds/#position"
     },
 
     { "key": "<prog-id-alpha-image-loader>",
