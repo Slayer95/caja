@@ -390,6 +390,15 @@
       "inherited": false,
       "mediaGroups": ["visual"] },
 
+    { "key": "clip-path",
+      "signature": "<uri> | [ <basic-shape> || <geometry-box> ] | none",
+      "default": "auto",
+      "appliesTo": "*",
+      "inherited": false,
+      "mediaGroups": ["visual"] },
+
+    { "key": "<geometry-box>", "signature": "fill-box | stroke-box | view-box | margin-box | <box>" },
+
     { "key": "color",
       "signature": "<color>",
       "default": null, "default-comment": "depends on user agent",
