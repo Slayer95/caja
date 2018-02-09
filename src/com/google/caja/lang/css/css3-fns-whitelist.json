@@ -1,8 +1,14 @@
 {
   "allowed": [
+    "inset",
+    "cyrcle",
+    "ellipse",
+    "polygon",
     "rect",
     "rgb",
     "rgba",
+    "hsl",
+    "hsla",
     "url" ],
 
   "denied": [
