@@ -1307,7 +1307,7 @@
       "signature": "counter(<identifier>) | counter(<identifier>, <list-style-type>)" },
 
     { "key": "<ellipse>",
-      "signature": "ellipse([ [ <length> | <percentage> | closest-side | farthest-side ]{2} ]? [ at <position> ]?)",
+      "signature": "ellipse([ [ <length> | <percentage> | closest-side | farthest-side ] [ <length> | <percentage> | closest-side | farthest-side ] ]? [ at <position> ]?)",
       "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
     },
 
@@ -1399,7 +1399,7 @@
     },
 
     { "key": "<polygon>",
-      "signature": "polygon(<fill-rule>? [ <length> | <percentage> ]{2} [ [ <length> | <percentage> ]{2} ]*)",
+      "signature": "polygon(<fill-rule>? [ <length> | <percentage> ] [ <length> | <percentage> ] [ [ <length> | <percentage> ] [ <length> | <percentage> ] ]*)",
       "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
     },
 

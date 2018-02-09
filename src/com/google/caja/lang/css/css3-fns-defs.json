@@ -21,13 +21,13 @@
       "signature": "[ <length> | <percentage> | closest-side | farthest-side ]? [ at <position> ]?" },
 
     { "key": "ellipse",
-      "signature": "[ [ <length> | <percentage> | closest-side | farthest-side ]{2} ]? [ at <position> ]?" },
+      "signature": "[ [ <length> | <percentage> | closest-side | farthest-side ] [ <length> | <percentage> | closest-side | farthest-side ] ]? [ at <position> ]?" },
 
     { "key": "rect",
       "signature": "<top> <right> <bottom> <left>" },
 
     { "key": "polygon",
-      "signature": "<fill-rule>? [ <length> | <percentage> ]{2} [ [ <length> | <percentage> ]{2} ]*" },
+      "signature": "<fill-rule>? [ <length> | <percentage> ] [ <length> | <percentage> ] [ [ <length> | <percentage> ] [ <length> | <percentage> ] ]*" },
 
     { "key": "rgb",
       "signature": "<red> <green> <blue>" },
