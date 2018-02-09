@@ -27,7 +27,7 @@
       "signature": "<top> <right> <bottom> <left>" },
 
     { "key": "polygon",
-      "signature": "<fill-rule>? [ <length> | <percentage> ] [ <length> | <percentage> ] [ [ <length> | <percentage> ] [ <length> | <percentage> ] ]*" },
+      "signature": "<fill-rule>? [ <length> | <percentage> ] [ <length> | <percentage> ] [ <length> | <percentage> ] [ , [ <length> | <percentage> ] [ <length> | <percentage> ] ]+" },
 
     { "key": "rgb",
       "signature": "<red> <green> <blue>" },

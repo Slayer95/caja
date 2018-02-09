@@ -258,7 +258,7 @@
       "mediaGroups": ["visual"],
       "source": "http://dev.w3.org/csswg/css3-background/#the-border-radius" },
 
-    { "key": "<border-radius>", "signature": "[<length> | <percentage>]{1,4} [ / [<length> | <percentage>]{1,4} ]?" },
+    { "key": "<border-radius>", "signature": "[ <length> | <percentage> ]{1, 4} [ / [ <length> | <percentage> ]{1, 4} ]?" },
 
     { "key": "border-right",
       "as": "border-top" },
@@ -1285,7 +1285,7 @@
     },
 
     { "key": "<circle>",
-      "signature": "circle( [ <length> | <percentage> | closest-side | farthest-side ]? [ at <position> ]? )",
+      "signature": "circle ( [ <length> | <percentage> | closest-side | farthest-side ]? [ at <position> ]? )",
       "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
     },
 
@@ -1307,7 +1307,7 @@
       "signature": "counter(<identifier>) | counter(<identifier>, <list-style-type>)" },
 
     { "key": "<ellipse>",
-      "signature": "ellipse([ [ <length> | <percentage> | closest-side | farthest-side ] [ <length> | <percentage> | closest-side | farthest-side ] ]? [ at <position> ]?)",
+      "signature": "ellipse ( [ [ <length> | <percentage> | closest-side | farthest-side ] [ <length> | <percentage> | closest-side | farthest-side ] ]? [ at <position> ]? )",
       "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
     },
 
@@ -1367,7 +1367,7 @@
     },
 
     { "key": "<inset>",
-      "signature": "inset([ <length> | <percentage> ]{1, 4} [ round <border-radius> ]?)",
+      "signature": "inset ( [ <length> | <percentage> ]{1, 4} [ round <border-radius> ]? )",
       "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
     },
 
@@ -1399,9 +1399,11 @@
     },
 
     { "key": "<polygon>",
-      "signature": "polygon(<fill-rule>? [ <length> | <percentage> ] [ <length> | <percentage> ] [ [ <length> | <percentage> ] [ <length> | <percentage> ] ]*)",
+      "signature": "polygon(<fill-rule>? , [ <length> | <percentage> ] [ <length> | <percentage> ] [ , [ <length> | <percentage> ] [ <length> | <percentage> ] ]+ )",
       "source": "https://drafts.csswg.org/css-shapes/#funcdef-inset"
     },
+
+    { "key": "<fill-rule>", "signature": "nonzero | evenodd" },
 
     { "key": "<position>",
       "default": "center",
