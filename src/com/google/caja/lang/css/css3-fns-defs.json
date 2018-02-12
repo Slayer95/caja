@@ -41,6 +41,36 @@
     { "key": "hsla",
       "signature": "<angle> <percentage> <percentage> <alphavalue>" },
 
+    { "key": "blur",
+      "signature": "<length>" },
+
+    { "key": "brightness",
+      "signature": "<number> | <percentage>" },
+
+    { "key": "contrast",
+      "signature": "<number> | <percentage>" },
+
+    { "key": "drop-shadow",
+      "signature": "<length>{2,3} <color>?" },
+
+    { "key": "grayscale",
+      "signature": "<number> | <percentage>" },
+
+    { "key": "hue-rotate",
+      "signature": "<angle>" },
+
+    { "key": "invert",
+      "signature": "<number> | <percentage>" },
+
+    { "key": "opacity",
+      "signature": "<number> | <percentage>" },
+
+    { "key": "saturate",
+      "signature": "<number> | <percentage>" },
+
+    { "key": "sepia",
+      "signature": "<number> | <percentage>" },
+
     { "key": "url",
       "signature": "<uri>|<string>" }
   ]

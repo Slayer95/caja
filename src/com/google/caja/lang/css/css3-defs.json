@@ -531,7 +531,7 @@
       "mediaGroups": ["visual"] },
 
     { "key": "filter",
-      "signature": "[ <ie-filter-opacity> | <prog-id> ]+",
+      "signature": "none | [ <ie-filter-opacity> | <prog-id> | <filter-function>]+",
       "default": null,
       "appliesTo": "*",
       "inherited": false,
@@ -1339,6 +1339,64 @@
                  " 'default', 'serif', 'sans-serif', 'monospace', 'fantasy',",
                  " and 'cursive') must be quoted to prevent confusion with",
                  " the keywords with the same names."]
+    },
+
+    { "key": "<filter-blur>",
+      "signature": "blur( <length> )",
+      "default": "none",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-brightness>",
+      "signature": "brightness( [ <number> | <percentage> ] )",
+      "default": "none",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-contrast>",
+      "signature": "contrast( [ <number> | <percentage> ] )",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-drop-shadow>",
+      "signature": "drop-shadow( <length>{2,3} <color>? )",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-function>",
+      "signature": "<filter-blur> | <filter-brightness> | <filter-contrast> | <filter-drop-shadow> | <filter-grayscale> | <filter-hue-rotate> | <filter-invert> | <filter-opacity-new> | <filter-saturate> | <filter-sepia>",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-grayscale>",
+      "signature": "grayscale( [ <number> | <percentage> ] )",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-hue-rotate>",
+      "signature": "hue-rotate( <angle> )",
+      "default": "none",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-invert>",
+      "signature": "invert( [ <number> | <percentage> ] )",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-opacity-new>",
+      "signature": "opacity( [ <number> | <percentage> ] )",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-saturate>",
+      "signature": "saturate( [ <number> | <percentage> ] )",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
+    },
+
+    { "key": "<filter-sepia>",
+      "signature": "sepia( [ <number> | <percentage> ] )",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/filter"
     },
 
     { "key": "<filter-opacity>",
